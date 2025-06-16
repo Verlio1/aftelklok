@@ -1,0 +1,97 @@
+body {
+  background-color: #ffe6f0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 2rem;
+}
+
+h1 {
+  color: #ff3399;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#countdown {
+  font-size: 2rem;
+  background: white;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #ff99cc;
+  margin-bottom: 2rem;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 8px #ccc;
+  margin: 2rem auto;
+  width: fit-content;
+}
+
+.calendar-container h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #cc0066;
+  text-align: center;
+}
+
+.calendar-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.calendar-container td,
+.calendar-container th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  width: 40px;
+  height: 50px;
+  position: relative;
+}
+
+.terugkomdag {
+  background-color: #ccffcc;
+  color: #006600;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #99cc99 inset;
+}
+
+.terugkomdag::after {
+  content: "❤️";
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font-size: 1rem;
+  color: #006600;
+}
+
+.terugkomdag:hover {
+  background-color: #b3ffb3;
+}
+
+.selected-today {
+  background-color: #ffcce6;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #cc3366;
+  box-shadow: 0 0 4px #ff99cc inset;
+}
+
+.calendar-container td {
+  text-align: center;
+  vertical-align: middle;
+}
